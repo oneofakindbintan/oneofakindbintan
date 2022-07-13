@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,200;1,300;1,400&display=swap');
 *
 {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -30,8 +29,10 @@ header{
 }
 .logo img
 {
-    width: 150px;
-    margin-left: 50px;
+    width: 100px;
+    height: 75%;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 .menu
 {
@@ -47,9 +48,10 @@ ul
 }
 header ul li a
 {
-    font-size: 12pt;
+    font-size: 1;
+    margin: 3px;
     text-decoration: none;
-    padding: 2px 15px;
+    padding: 1px;
     color: #050c13;
 }
 header ul li a:hover,
@@ -122,7 +124,7 @@ section1
 }
 .about
 {
-    padding: 100px;
+    margin: 50px;
     color: #050c13;
     text-decoration: none;
     z-index: 1000;
@@ -143,10 +145,13 @@ section1
 
 footer
 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 10vh;
+    width: 100%;
     background: linear-gradient(#9a9a9a,#fff);
 }
 .wrapper
@@ -159,7 +164,7 @@ footer
 }
 .wrapper .icon
 {
-    margin: 0 20px;
+    margin: 0;
     text-align: center;
     cursor: pointer;
     display: flex;
@@ -268,6 +273,7 @@ footer2 a, footer2 p
 {
     display: flex;
     justify-content: center;
+    text-align: center;
     font-size: 9pt;
     text-decoration: none;
     color: #fff;
