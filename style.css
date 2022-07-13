@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,200;1,300;1,400&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background-image:url(img/bg1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+}
+.logo
+{
+    flex: 1;
+}
+.logo img
+{
+    width: 150px;
+    margin-left: 50px;
+}
+.menu
+{
+    flex: 1,5;
+}
+ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-right: 10px;
+}
+header ul li a
+{
+    font-size: 12pt;
+    text-decoration: none;
+    padding: 2px 15px;
+    color: #050c13;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #050c13;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+
+section
+{
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#9a9a9a,#fff);
+}
+.container
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    animation: slide 20s infinite;
+    object-fit: cover;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide
+{
+    0%{
+        transform: translateX(0);
+    }
+    15%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    37.5%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    62.5%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-300%);
+    }
+    87.5%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+section1
+{
+    padding: 0;
+    box-sizing: border-box;
+}
+.about
+{
+    padding: 100px;
+    color: #050c13;
+    text-decoration: none;
+    z-index: 1000;
+}
+.about h2
+{
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #050c13;
+}
+.about p
+{
+    font-size: 10pt;
+    text-align: justify;
+    color: #050c13;
+}
+
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: linear-gradient(#9a9a9a,#fff);
+}
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.wrapper .icon
+{
+    margin: 0 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+.wrapper .icon span
+{
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+.wrapper .icon span i
+{
+    line-height: 60px;
+    font-size: 25px;
+}
+.wrapper .icon .tooltip
+{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    color: #050c13;
+    font-size: 8pt;
+    border-radius: 10px;
+    padding: 5px 8px;
+    opacity: 0;
+    pointer-events: none;
+}
+.wrapper .icon:hover .tooltip
+{
+    top: -40px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.icon .tooltip::before
+{
+    position: absolute;
+    content: '';
+    height: 0px;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50) rotate(45deg);
+}
+.wrapper .icon:hover span
+{
+    color: #fff;
+}
+a{ color: #050c13;}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip
+{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before
+{
+    background-color: #6b6b6b;
+}
+.wrapper .tiktok:hover span,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip::before
+{
+    background-color: #6b6b6b;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before
+{
+    background-color: #6b6b6b;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before
+{
+    background-color:  #6b6b6b;
+}
+.wrapper .whatsapp:hover span,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before
+{
+    background-color: #6b6b6b;
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before
+{
+    background-color: #6b6b6b;
+}
+
+footer2
+{
+    box-sizing: content-box;
+    padding: 20px;
+    display: block;
+    background-color: #050c13;
+}
+footer2 a, footer2 p
+{
+    display: flex;
+    justify-content: center;
+    font-size: 9pt;
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+    font-weight: 200;
+}
