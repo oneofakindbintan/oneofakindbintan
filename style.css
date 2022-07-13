@@ -8,7 +8,7 @@
 
 body
 {
-    background-image:url(img/bg1.png);
+    background-image:url(img/bg1.jpg);
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
@@ -25,33 +25,33 @@ header{
 }
 .logo
 {
-    flex: 1;
+    flex: 1,5;
 }
 .logo img
 {
-    width: 100px;
+    width: 100px;`
     height: 75%;
     margin-left: 20px;
     margin-right: 10px;
 }
 .menu
 {
-    flex: 1,5;
+    flex: 1;
 }
 ul
 {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     list-style: none;
 }
 header ul li a
 {
-    font-size: 1;
-    margin: 3px;
+    font-size: 10pt;
     text-decoration: none;
-    padding: 1px;
+    padding: 2px;
     color: #050c13;
+    margin: 3px;
 }
 header ul li a:hover,
 header ul li a.active
