@@ -261,20 +261,21 @@ a{ color: #050c13;}
     background-color: #6b6b6b;
 }
 
-footer2
+footer1
 {
     box-sizing: content-box;
     padding: 20px;
     display: block;
     background-color: #050c13;
 }
-footer2 a, footer2 p
+footer1 .located a
 {
     display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 9pt;
     text-decoration: none;
     color: #fff;
     font-style: italic;
     font-weight: 200;
+    font-size: 8pt;
 }
